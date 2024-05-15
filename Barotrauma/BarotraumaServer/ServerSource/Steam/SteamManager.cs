@@ -8,7 +8,7 @@ namespace Barotrauma.Steam
         private static void InitializeProjectSpecific() { }
 
         private static bool IsInitializedProjectSpecific
-            => Steamworks.SteamServer.IsValid;
+            => false;//Steamworks.SteamServer.IsValid;
 
         public static bool CreateServer(Networking.GameServer server, bool isPublic)
         {

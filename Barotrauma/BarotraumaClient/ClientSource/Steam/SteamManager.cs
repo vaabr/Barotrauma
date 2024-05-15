@@ -17,7 +17,7 @@ namespace Barotrauma.Steam
         public static IReadOnlyList<Identifier> InitializationErrors => initializationErrors;
 
         private static bool IsInitializedProjectSpecific
-            => Steamworks.SteamClient.IsValid && Steamworks.SteamClient.IsLoggedOn;
+            => false;//Steamworks.SteamClient.IsValid && Steamworks.SteamClient.IsLoggedOn;
 
         private static void InitializeProjectSpecific()
         {

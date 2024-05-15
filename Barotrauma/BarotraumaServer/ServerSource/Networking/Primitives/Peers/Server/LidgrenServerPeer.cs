@@ -462,12 +462,7 @@ namespace Barotrauma.Networking
                 || !packet.AuthTicket.TryUnwrap(out var authTicket)
                 || !authenticators.TryGetValue(authTicket.Kind, out var authenticator))
             {
-#if DEBUG
-                DebugConsole.NewMessage($"Debug server accepts unauthenticated connections", Microsoft.Xna.Framework.Color.Yellow);
                 acceptClient(new AccountInfo(packet.AccountId));
-#else
-                rejectClient();
-#endif
                 return;
             }
 

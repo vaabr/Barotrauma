@@ -56,7 +56,7 @@ namespace Steamworks
             GameDescription = gameDesc;
 			GamePort = 27015;
 			QueryPort = 27016;
-            Mode = InitServerMode.Authentication;
+            Mode = InitServerMode.NoAuthentication;
 			VersionString = "1.0.0.0";
 			IpAddress = null;
 		}
